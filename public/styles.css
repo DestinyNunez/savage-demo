@@ -1,6 +1,90 @@
-body{
-  background: red;
+* {
+  box-sizing: border-box;
 }
-h3{
+
+body {
+  margin: 0 100px 50px 100px;
+  background: rgb(233, 21, 81);
+  background: linear-gradient(0deg, rgba(233, 21, 81, 1) 0%, rgba(111, 23, 15, 1) 100%);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  background-image: linear-gradient(-225deg,
+    #231557 0%,
+    #FFFFFF 29%,
+    #665000 67%,
+    #FF0000 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-coslor: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    font-size: 30px;
+  }
+
+  h2 {
+    color: gray;
+    margin: 15px;
+  }
+
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
+
+h3 {
   margin-top: 40px;
+}
+h4 {
+  color: gray;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 5px solid lightgray;
+  border-radius: 14px;
+  background: lightgray;
+  padding: 10px;
+  width: auto;
+}
+
+
+li {
+  list-style: decimal-leading-zero;
+  padding: 10px;
+  color: gray;
+}
+
+.fa-thumbs-up {
+  color: darkgreen;
+}
+
+.fa-thumbs-down {
+  color: darkblue;
+}
+
+.fa-trash {
+  color: darkred;
+}
+
+input, button {
+  border-radius: 7px;
+  border: none;
+  padding: 5px;
+  margin-bottom: 10px;
 }
